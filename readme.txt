@@ -1,69 +1,84 @@
-�g���g��Z 1.3.1
+
+kirikiri-kag-ACG is a personal project managed by ACG. 
+First of all, I would like give credit to the creator of this engine. 
+This project is just a personal interest, where our goal is to create just a small original visual novel.
+The visual novel WILL BE OPEN SOURCE, and free to play.
+Also, WE NEED HELP! If YOU are a kirikiri programmer, you help is greatly appreciated.
+If you have any questions, comments, or ideas about this project. Feel free to contact me.
+at acthegreat133@gmail.com
+
+Sincerely,
+ACG
+
+--original Kirikiri Z readme--
 
 
-�y�g���g��Z�ɂ��āz
-�g���g��Z�́A�g���g��2 �� VC�r���h�Ή��ƃ��K�V�[�@�\�̍폜�A���_���@�\�̒ǉ���ړI�Ƃ����g���g��2�t�H�[�N�v���W�F�N�g�ł��B
+吉里吉里Z 1.3.1
 
 
-�y�_�E�����[�h�y�[�W�z
+【吉里吉里Zについて】
+吉里吉里Zは、吉里吉里2 の VCビルド対応とレガシー機能の削除、モダン機能の追加を目的とした吉里吉里2フォークプロジェクトです。
+
+
+【ダウンロードページ】
 http://krkrz.github.io/
 
 
-�y�w���v�z
-�ڍׂȃh�L�������g�ɂ��ẮA��L�y�[�W�̊e��I�����C���w���v���Q�Ƃ��Ă��������B
-�e��w���v�͈ȉ��̃y�[�W�ɂȂ�܂��B
+【ヘルプ】
+詳細なドキュメントについては、上記ページの各種オンラインヘルプを参照してください。
+各種ヘルプは以下のページになります。
 
-�g���g��Z���t�@�����X
+吉里吉里Zリファレンス
 http://krkrz.github.io/docs/kirikiriz/j/contents/index.html
 
-TJS2 ���t�@�����X
+TJS2 リファレンス
 http://krkrz.github.io/docs/tjs2/j/contents/index.html
 
-�g���g��Z�ł̋g���g��2����̕ύX�_�ꗗ
+吉里吉里Zでの吉里吉里2からの変更点一覧
 http://krkrz.github.io/updatefromkr2.html
 
 
-�y�t�@�C���z
-\plugin				: �e��v���O�C���������Ă��܂��B
-\plugin64			: �e��v���O�C����64bit�ł������Ă��܂��B
-debugger.sdp		: �f�o�b�K�̐ݒ�t�@�C���ł��B
-krkrdebg.exe		: �f�o�b�K�{�̂ł��B
-krkrdegb_readme.txt	: �f�o�b�K�̐����ł��B
-license.txt			: ���C�Z���X�����L�q���ꂽ�e�L�X�g�t�@�C���ł��B
-readme.txt			: �{�t�@�C���ł��B�ȒP�Ȑ������L�ڂ��Ă��܂��B
-tvpwin32.exe		: �g���g��Z�{�̂ł��B
-tvpwin32_dbg.exe	: �f�o�b�K�@�\��L�������ăr���h�����g���g��Z�{�̂ł��B
-tvpwin64.exe		: �g���g��Z�{�̂�64bit�łł��B
+【ファイル】
+\plugin				: 各種プラグインが入っています。
+\plugin64			: 各種プラグインの64bit版が入っています。
+debugger.sdp		: デバッガの設定ファイルです。
+krkrdebg.exe		: デバッガ本体です。
+krkrdegb_readme.txt	: デバッガの説明です。
+license.txt			: ライセンス文が記述されたテキストファイルです。
+readme.txt			: 本ファイルです。簡単な説明を記載しています。
+tvpwin32.exe		: 吉里吉里Z本体です。
+tvpwin32_dbg.exe	: デバッガ機能を有効化してビルドした吉里吉里Z本体です。
+tvpwin64.exe		: 吉里吉里Z本体の64bit版です。
 
-�y�g���g��2 �� TJS2�X�N���v�g�̓���ɂ��āz
-�g���g��Z �͋g���g��2 �Ɗ��S�݊��ł͂Ȃ����߁A�g���g��2 �� TJS2�X�N���v�g�𓮂����ɂ͂������ύX���K�v�ł��B
+【吉里吉里2 の TJS2スクリプトの動作について】
+吉里吉里Z は吉里吉里2 と完全互換ではないため、吉里吉里2 の TJS2スクリプトを動かすにはいくつか変更が必要です。
 
-�g���g��Z �ł͕W���̕����R�[�h��UTF-8�ɕύX����Ă��܂��B
-���X�N���v�g�����̂܂ܓ������ꍇ�́A�R�}���h���C���� -readencoding=Shift_JIS �̒ǉ����K�v�ł��B
+吉里吉里Z では標準の文字コードがUTF-8に変更されています。
+旧スクリプトをそのまま動かす場合は、コマンドラインで -readencoding=Shift_JIS の追加が必要です。
 
-�g�ݍ��݋@�\�ł����� KAGParser �ƃ��j���[�̓v���O�C��������Ă��܂��B
-KAGParser �ƃ��j���[�N���X���K�v�ł���� KAGParser.dll �� menu.dll �������N����K�v������܂��B
+組み込み機能であった KAGParser とメニューはプラグイン化されています。
+KAGParser とメニュークラスが必要であれば KAGParser.dll と menu.dll をリンクする必要があります。
 
-�}���`�^�b�`���T�|�[�g����f�o�C�X���L���Ȓ[���ł̓^�b�`���L���ɂȂ�܂��B
-( onMouseDown �ł͂Ȃ� onTouchDown ���͂��ƌ����悤�ȓ���ƂȂ� )
-�^�b�`�������s��Ȃ��ꍇ�́A�]���̃}�E�X�����Ńn���h�����O�o����悤�ɖ���������K�v������܂��B
-����������ɂ� Window.enableTouch �� false �ɂ��܂��B
+マルチタッチをサポートするデバイスが有効な端末ではタッチが有効になります。
+( onMouseDown ではなく onTouchDown が届くと言うような動作となる )
+タッチ処理を行わない場合は、従来のマウス処理でハンドリング出来るように無効化する必要があります。
+無効化するには Window.enableTouch を false にします。
 
-PassThroughDrawDevice �͍폜����Ă���̂ŁA�g�p���Ă���ӏ��͏����������K�v�ł��B
+PassThroughDrawDevice は削除されているので、使用している箇所は書き換えが必要です。
 
-���̑��폜���ꂽ���\�b�h�����g�p���Ă���ꍇ�́A�����̏���������������K�v������܂��B
+その他削除されたメソッド等を使用している場合は、それらの処理を書き換える必要があります。
 
-���ڍׂȕύX�_�ɂ��Ă͏�L�u�g���g��Z�ł̋g���g��2����̕ύX�_�ꗗ�v�y�[�W���Q�Ƃ��Ă��������B
+より詳細な変更点については上記「吉里吉里Zでの吉里吉里2からの変更点一覧」ページを参照してください。
 
 
-�y�X�V�����z
+【更新履歴】
 2016/08/01 1.3.2.6
 2016/06/03 1.3.1.5
 2016/05/31 1.3.0.4
 2015/08/17 1.2.0.3
 2014/08/03 1.1.0.2
-2013/12/31 1.0.0.1 �����[�X
+2013/12/31 1.0.0.1 リリース
 
-�ڍׂ͗����y�[�W�Q�Ƃ��Ă��������B
+詳細は履歴ページ参照してください。
 http://krkrz.github.io/olderversions.html
 
