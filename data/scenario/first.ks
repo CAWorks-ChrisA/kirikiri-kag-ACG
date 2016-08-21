@@ -15,11 +15,13 @@
 [wait time=200]
 ;setup config
 ;define macros(buttons, etc) here
+
 ;Macro Clear: called every time, to clear message, call ui setup, and +1 on position
 [macro name=clear]
 [cm]
 [call storage=uiscript.ks target=*uisetup]
 [endmacro]
+;count up: +1 on pos when called
 [macro name=countup]
 [eval exp="sf.pos = sf.pos + 1"]
 [endmacro]

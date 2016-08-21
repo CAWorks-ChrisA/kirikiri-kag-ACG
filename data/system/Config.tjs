@@ -85,7 +85,7 @@ function KAGWindow_config()
 // true を指定すると、セーブデータの拡張子は .bmp になり、エクスプローラや
 // 「開く」ダイアログボックスの「縮小版」表示でセーブ時点でのサムネイルを
 // 表示することができるようになります。
-;saveThumbnail = false;
+;saveThumbnail = true;
 
 
 // ◆サムネイルの保存サイズ
@@ -93,7 +93,7 @@ function KAGWindow_config()
 // 設定は意味がありません。
 // 横幅はピクセル単位で指定してください。たて幅は scWidth と scHeight の
 // 比と同じ比で自動的に計算されます。
-;thumbnailWidth = 133;
+;thumbnailWidth = 256;
 
 // ◆サムネイルの保存モード
 // サムネイルの保存モードを指定します。saveThumbnail を true に設定しないとこの
